@@ -10,6 +10,8 @@ Angular Aspects
 - 2 Way Data Binding for HTML & TypeScript for Immediate DOM Response
 - Internal Backend for Data Storage
 - Interface Management for Data Handling & Implementation with Date, Probability & Conditionary.
+- Angular Life Cycle’s handled initialization/destruction, change detection optimization & component interaction.
+
 
 Functional Aspects & Guidelines
 - The parking lot includes multiple entry and exit points.
