@@ -1,0 +1,27 @@
+<p class="title">Parking Lot Information</p>
+<hr class="the-bar">
+
+<div *ngFor="let floor of parkInfo; let i = index">
+    <div class="each-floor">
+        <br>Floor {{ floor.parkFloor }}
+        <hr/>
+        <div class="text-box">
+            <div class="box-info"> Open Space:</div>
+            <div class="box-info"> Small Vehicles: {{150 - floor.smallCar}} / 150 </div>
+            <div class="box-info"> Medium Vehicles: {{250 - floor.middleCar}} / 250 </div>
+            <div class="box-info"> Large Vehicles: {{100 - floor.largeCar}} / 100 </div>
+        </div>
+        <hr/>
+        <div class="btn-box">
+            <button (click)="toggle(i)"> Floor Car Info</button>
+            <button (click)="close(i)">X</button>
+        </div>
+        <div *ngIf="openInfo[i]">
+            <div *ngFor="let ticket of floor.floorTickets">
+                <div class="box-info">Plate Number: {{ ticket.license }} ({{ ticket.size }})</div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+</div>

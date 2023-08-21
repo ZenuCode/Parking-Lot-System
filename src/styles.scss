@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background: url("./assets/back.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0; /* Reset margin for the body element */
+    padding: 0; /* Reset padding for the body element */
+    color: white;
+  }

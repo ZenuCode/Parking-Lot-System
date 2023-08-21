@@ -1,0 +1,30 @@
+.title {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.the-bar {
+    border: 2px solid;
+}
+
+.each-floor {
+    font-family: sans-serif;
+    text-align: center;
+    border: 3px solid;
+    border-radius: 5px;
+}
+
+.box-info {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}

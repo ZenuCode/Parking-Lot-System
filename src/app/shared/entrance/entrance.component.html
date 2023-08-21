@@ -1,0 +1,10 @@
+<p class="entrance-log">Entrance Log</p>
+<hr/>
+
+<div *ngFor="let ticket of ticketList">
+  <div class="info-container">
+    <p class="box-info">Vehicle Enter: {{ticket.license}}, Entrance: {{ticket.entrance}}</p>
+    <p class="box-info">Time: {{ticket.entryTime | date : "medium"}}</p>
+  </div>
+  <br>
+</div>
